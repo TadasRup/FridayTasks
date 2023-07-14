@@ -68,6 +68,17 @@ console.log('==== 9 task ====');
 
 console.log('==== 10 task ====');
 
+function phoneNumber(array) {
+  const number = array.join('');
+  const formattedNumber = `(${number.substring(0, 3)}) ${number.substring(3, 6)}-${number.substring(6)}`;
+  return formattedNumber;
+}
+const numberArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+const formattedNumber = phoneNumber(numberArray);
+console.log(formattedNumber);
+
+
+
 
 /*
 ────────────────────────────────────────
